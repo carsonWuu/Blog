@@ -1,0 +1,75 @@
+
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.personPic {
+	width: 148px;
+	height: 207px;
+	border: 3px solid #fff;
+	margin:10px auto;
+	
+}
+img {
+	width: 100%;
+	height: 100%;
+}
+ul {
+	list-style: none;
+	color: #63f;
+}
+
+li.personFor {
+	font-size: 15px;
+	font-weight:bold;
+	margin: 20px 20px;
+}
+.person1{
+	float: left;
+	font-size: 25px;
+	color: #fff;
+	margin: 20px 20px;
+}
+
+
+.myName {
+	font-size: 50px;
+	color: #63f;
+	margin: 40px;
+	font-weight: 800;
+}
+hr {
+	padding:0 20px;
+	width: 1000px;
+
+	height:5px;border:none;border-top:5px ridge #609;
+}
+
+li.year,li.pro,li.freel,li.qua{
+	font-size: 25px;
+	font-weight:bold;
+	margin: 10px 10px;
+	color: #003;
+}
+li.year {
+	float: left;
+	
+}
+
+.education, .programe,.quality, .freelife {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+ol {
+	color: #63f;
+}
+
+
+
+
+
+
+</style>
