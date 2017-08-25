@@ -4,84 +4,187 @@
 <meta charset="UTF-8">
 <title>个人简历</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link rel="stylesheet" href="bootstrap.min.css">
 <link href="css.css" rel="stylesheet" type="text/css" />
+<script src="jquery-3.2.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<style>
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
 
-<link rel="stylesheet"
-href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+.personPic {
+	width: 148px;
+	height: 207px;
+	border: 3px solid #fff;
+	margin: 10px 0;
+}
 
+img {
+	width: 100%;
+	height: 100%;
+}
+
+ul {
+	list-style: none;
+	color: #63f;
+}
+
+li.personFor {
+	font-size: 15px;
+	font-weight: bold;
+	margin: 20px 0;
+}
+
+.person {
+	
+	font-size: 25px;
+	color: #fff;
+	margin: 20px 0;
+}
+
+.myName {
+	font-size: 50px;
+	color: #63f;
+	margin: 20px;
+	font-weight: 800;
+}
+
+hr {
+	padding: 0 20px;
+	width: 100%;
+	height: 5px;
+	border: none;
+	border-top: 5px ridge #609;
+}
+
+
+
+p.main {
+	font-size: 30px;
+	font-weight: 600;
+	margin: 0 20px;
+}
+
+.school,.pro,.freel,li.year, li.pro, li.freel, li.qua  {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0;
+	color: #003;
+}
+
+ol {
+	color: #63f;
+}
+</style>
 </head>
+
 
 <body style="background: url(/image/bg.jpg)">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 "
-				style="height:100%;position:responsive;background-color: #dedef8; box-shadow: inset 1px -1px 1px #A6A6D2, inset -1px 1px 1px #A6A6D2;">
-				<div class="personFormation">
-					<div class="personPic">
-						<img src="/image/person.jpg" class="img-responsive" alt="Cinque Terre">
+				style="height: 100%; position: responsive; background-color: #dedef8; box-shadow: inset 1px -1px 1px #A6A6D2, inset -1px 1px 1px #A6A6D2;">
+				<div class="row">
+					<div class="col-xs-3 col-sm-3 col-md-3col-lg-3 "></div>
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+						<div class="personPic">
+							<img src="/image/person.jpg" class="img-responsive"
+								alt="Cinque Terre">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+					<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+						<div class="person">
+							<ul class="big1">
+								<h1>个人资料</h1>
+								<li class="personFor">年龄&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<u>23岁</u></li>
+
+								<li class="personFor">居住地 &nbsp<u>江苏南京市</u></li>
+
+								<li class="personFor">籍贯 &nbsp&nbsp&nbsp&nbsp<u>广西贺州市</u></li>
+
+								<li class="personFor">手机号 &nbsp<u>18013868353</u></li>
+
+								<li class="personFor">邮箱 &nbsp&nbsp&nbsp&nbsp<u>carsonwuu@163.com</u></li>
+							</ul>
+
+							<ul class="big2">
+								<h1>编程语言</h1>
+								<li class="personFor">c++</li>
+
+								<li class="personFor">java</li>
+
+								<li class="personFor">sql</li>
+
+								<li class="personFor">html/css/javascript</li>
+							</ul>
+
+							<ul class="big3">
+								<h1>运动</h1>
+								<li class="personFor">足球</li>
+								<li class="personFor">篮球</li>
+							</ul>
+						</div>
+
+
 					</div>
 
-					<div class="person1">
-						<ul class="big1">
-							<h1>个人资料</h1>
-							<li class="personFor">年龄&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<u>23岁</u></li>
-
-							<li class="personFor">居住地 &nbsp<u>江苏南京市</u></li>
-
-							<li class="personFor">籍贯 &nbsp&nbsp&nbsp&nbsp<u>广西贺州市</u></li>
-
-							<li class="personFor">手机号 &nbsp<u>18013868353</u></li>
-
-							<li class="personFor">邮箱 &nbsp&nbsp&nbsp&nbsp<u>carsonwuu@163.com</u></li>
-						</ul>
-
-						<ul class="big2">
-							<h1>编程语言</h1>
-							<li class="personFor">c++</li>
-
-							<li class="personFor">java</li>
-
-							<li class="personFor">sql</li>
-
-							<li class="personFor">html/css/javascript</li>
-						</ul>
-
-						<ul class="big3">
-							<h1>运动</h1>
-							<li class="personFor">足球</li>
-							<li class="personFor">篮球</li>
-						</ul>
-					</div>
-					
-					
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
 				</div>
 			</div>
-			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-sm-offset-3"
+
+			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9"
 				style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-				<div class="personFormation">
-					<div class="myName">
-						吴传顺
-						<div><hr/></div>
-					</div>
 
-					<div class="education">
-						<ul>最高学历<hr />
-							<li class="year">2013.09-2017.07</li>
-							<li class="year">南京大学</li>
-							<li class="year">计算机科学与技术（本科）</li>
-							<br />
-							
-						</ul>
+				<div>
+					<div class="row">
+						<p class="myName">吴传顺</p>
+						<hr />
 					</div>
+				</div>
 
-					<div class="programe">
-						<ol>项目经历
-							<hr />
+				<div class="education">
+					<div class="row">
+						<p class="main">最高学历</p>
+						<hr />
+					</div>
+				</div>
+
+				<div class="school">
+					<div class="row" style="margin:10px">
+						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+							<span>2013.09-2017.07</span>
+						</div>
+
+
+						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+							<span>南京大学</span>
+						</div>
+						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+							<span>计算机科学与技术（本科）</span>
+						</div>
+
+					</div>
+				</div>
+
+				<br />
+
+
+
+
+
+				<div class="programe">
+					<div class="row">
+						<p class="main">项目经历</p>
+						<hr />
+						<ol>
 							<li class="pro">
-								<p >入门语言为c++，可以对基本的数据结构和算法有效的实现出来。
+								<p>入门语言为c++，可以对基本的数据结构和算法有效的实现出来。
 									①c++实现飞机游戏、贪吃蛇等控制台小游戏，在飞机游戏中把游戏地图、飞机、敌机、子弹封装成类。拥有生命值、生命数、分数、移动速度等属性值。飞机游戏中，需要处理移动、碰撞，射击，而改变地图中各个对象的坐标和对象的绘制，改变我方飞机的各
 									个属性值。
 									②实现图书管理系统，运用哈希函数进行图书的存储。图书数据量巨大，需要对图书进行增删改查等操作。项目中使用数据结构对数据进行记录
@@ -98,32 +201,41 @@ href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
 							</li>
 						</ol>
 					</div>
-
-					<div class="quality">
-						<ul>
-							个人品质
-							<hr />
-							<li class="qua"><p>掌握计算机基础知识理论、数学基础，能够解决基础的问题,使我能够在计算机知识学习中保持源源不断的兴趣和热情。</p></li>
-						
-							<li class="qua"><p>喜欢运动，热衷于足球篮球及中距离跑步，让我可以对生活充满激情和一直积极向上的心。</p></li>
-							
-							<li class="qua"><p>真诚，守信，踏实，充满阳光与活力，善良、理解他人，使我能够做一个有责任感有正能量的人。</p></li>
-						</ul>
-					</div>
-
-					<div class="freelife">
-						<ul>
-							课余生活
-							<hr />
-							<li class="freel" ><p>2013年获得校园八人制足球新生杯亚军，获得2013~2014南京大学足球超级联赛冠军；2013年校运会跳高获得前八名次，4*400接力赛获得季军；
-							2014~2015年获得人民奖学金；“爱心包裹”项目做志愿者，商场、街上募捐；南大和园教老年人学习电脑基础知识；社会暑期实践荣登在2015年《南京史志》等。</p></li>
-						</ul>
-					</div>
-					
 				</div>
-			
+
+				<div class="quality">
+				<div class="row">
+				<p class="main">个人品质</p>
+				<hr />
+					<ul>
+						
+						
+						<li class="qua"><p>掌握计算机基础知识理论、数学基础，能够解决基础的问题,使我能够在计算机知识学习中保持源源不断的兴趣和热情。</p></li>
+
+						<li class="qua"><p>喜欢运动，热衷于足球篮球及中距离跑步，让我可以对生活充满激情和一直积极向上的心。</p></li>
+
+						<li class="qua"><p>真诚，守信，踏实，充满阳光与活力，善良、理解他人，使我能够做一个有责任感有正能量的人。</p></li>
+					</ul>
+				</div>
+				</div>
+				
+				
+				<div class="freelife">
+				<div class="row">
+				<p class="main">课余生活</p>
+						<hr />
+						
+					<ul>
+						
+						<li class="freel"><p>2013年获得校园八人制足球新生杯亚军，获得2013~2014南京大学足球超级联赛冠军；2013年校运会跳高获得前八名次，4*400接力赛获得季军；
+								2014~2015年获得人民奖学金；“爱心包裹”项目做志愿者，商场、街上募捐；南大和园教老年人学习电脑基础知识；社会暑期实践荣登在2015年《南京史志》等。</p></li>
+					</ul>
+				</div>
+				</div>
 			</div>
-			
+
 		</div>
+
+	</div>
 </body>
 </html>
