@@ -20,145 +20,145 @@
 <!-- Angular Material JavaScript -->
 <script
 	src="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.js"></script>
-<style>
-.body, .html {
-	margin: 0;
-	padding: 0;
-}
 
-nav {
-	background-color: #fef;
-	overflow: hidden
-}
 
-ul {
-	display: inline;
-	list-style: none;
-	width: 100%;
-	margin: 0;
-	padding:0;
-}
-
-.btn.btn-success, .btn.btn-danger {
-	margin: 0;
-	float: right;
-}
-
-h2, .container-fluid {
-	margin: 0;
-	padding: 0;
-}
-</style>
 <script>
-function year(){
-	var y=new Date();
+function startTime()
+{
 	
-	$(".today").innerHTML="3"
+var today=new Date();
+var h=today.getFullYear();
+document.getElementById('today').innerHTML="计算机学习时间："+(h-2013)+"年";
+t=setTimeout('startTime()',86400);
 }
 </script>
 </head>
-<body>
-	<div class="container-fluid" style="margin:0;padding:0;">
+<body onload="startTime()">
 
-		<div id="header" class="row">
-			<nav id="rightTop">
-				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-					<ul class="nav nav-tabs">
-						<li style="color: #ccc; text-align: left"><h2>CarsonBlogs</h2></li>
-						<li style="color: #ccc; margin: 10px 0 0 0"><sub>&nbsp;&nbsp;qq:2622605811</sub></li>
-					</ul>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-					<ul style="display: inline-block">
-						<li><a href="#" class="btn btn-success"
-							style="margin: 0; padding: 0;">登录</a></li>
-						<li><a href="#" class="btn btn-danger"
-							style="margin: 0 10px; padding: 0;">登出</a></li>
-					</ul>
-				</div>
-			</nav>
+	<nav class="navbar navbar-default" role="navigation"
+		style="padding: 0; margin: 0;">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="http://www.cnblogs.com/carsonwuu/" target="_blank"
+					style="text-decoration: underline;"><strong
+					style="font-size: 35px">CarsonBlogs</strong></a><sub>&nbsp;&nbsp;mail:carsonWuu@163.com</sub>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-user"></span>
+						登录</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>
+						登出</a></li>
+			</ul>
 		</div>
+	</nav>
 
-		<div id="menu" class="row" style="background-color: orange;">
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				<h2 style="margin: 10px">
-					<a href="index.html" target="_blank">个人简介</a>
-				</h2>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+				<a class="navbar-brand"
+					href="https://carsonwuu.github.io/Blog/index.html" target="_blank"
+					style="text-decoration: underline;">个人简介</a>
+			</div>
+			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+
+				<ul class="nav navbar-nav">
+					<li class="active"><a id="menu1" href="#">作者 </a></li>
+					<li><a id="menu2" href="#">HTML</a></li>
+					<li><a id="menu3" href="#">CSS</a></li>
+					<li><a id="menu4" href="#">JAVASCRIPT</a></li>
+					<li><a id="menu5" href="#">C++</a></li>
+					<li><a id="menu6" href="#">JAVA</a></li>
+				</ul>
 			</div>
 		</div>
+	</div>
 
-		<div id="profile" class="row" style="margin:0;padding:0;box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444; ">
-			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-				<ul class="nav nav-pills nav-stacked" style="margin:0;padding:0;">
-					<li class="active"><a href="#">个人简介</a></li>
-					<li><a href="#"><span class="visible-lg"> <img
-							src="https://carsonwuu.github.io/hello-world/image/person.jpg" class="center-block img-rounded" width="150"
-							height="150"></span> <span class="visible-md"> <img
-							src="../image/Unperson.jpg" class="img-circle" width="750"
-							height="100"></span> <span class="visible-sm"> <img
-							src="../image/Unperson.jpg" class="img-circle" width="35"
-							height="50"></span> <span class="visible-xs"> <img
-							src="../image/Unperson.jpg" class="img-circle" width="16"
-							height="25"></span></a></li>
-					<li><a href="#">职业</a></li>
-					<li><a href="#">c++/java/html/css/js</a></li>
-					<li id="theDay"><a href="#"><p class="today">3年</p></a></li>
-				</ul>
-				<ul class="nav nav-pills nav-stacked" style="margin:0;padding:0;">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">JAVA</a></li>
-					<li><a href="#">C++</a></li>
-					<li><a href="#">html/css/js</a></li>
 
-					<li><a href="#">BootStrap</a></li>
-					<li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#"> Java <span class="caret"></span>
-					</a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Swing</a></li>
-							<li><a href="#">jMeter</a></li>
-							<li><a href="#">EJB</a></li>
-							<li class="divider"></li>
-							<li><a href="#">分离的链接</a></li>
-						</ul></li>
-				</ul>
-
-				<!-- 16:9 aspect ratio 
+	<div id="profile" class="row"
+		style="margin: 0; padding: 0;">
+		<div id="profileHide" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style="background:snow">
+			<ul class="nav nav-pills nav-stacked" style="margin: 0; padding: 0;">
+				<li><a href="#">简介</a></li>
+				<li >
+					<span class="visible-lg"> <img
+						src="https://carsonwuu.github.io/Blog/image/person.jpg"
+						class="img-rounded" width="150" height="150">
+					</span> 
+					<span class="visible-md"> <img
+						src="https://carsonwuu.github.io/Blog/image/person.jpg"
+						class="img-circle" width="75" height="100">
+					</span>
+					<span class="visible-sm"> <img
+						src="https://carsonwuu.github.io/Blog/image/person.jpg"
+						class="img-circle" width="35" height="50">
+						</span> 
+					<span class="visible-xs"> <img
+						src="https://carsonwuu.github.io/Blog/image/person.jpg"
+						class="img-circle" width="16" height="25">
+						</span>
+						</li>
+				<li ><a href="#">本科</a></li>
+				<li><a href="#">c++/java/html/css/js</a></li>
+				<li><a href="#"><p id="today">计算机学习时间：10年</p></a></li>
+			</ul>
+			<!-- 16:9 aspect ratio 
 				<div class="embed-responsive embed-responsive-16by9">
 					<iframe class="embed-responsive-item" src="/image/zgr.mp3"></iframe>
 				</div>
 				-->
-				
-			</div>
-			
-			<div  id="show" class="col-xs-9 col-sm-9 col-md-9 col-lg-9"
-				style="display:inline-block;border:2px solid red;margin:0;padding:0;">
-			<p style="float:center;color:#333"><h2>title</h2>
-			<p>neirong</p>
-			</div>
+
 		</div>
-		
-		<div class="row">
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
-			<div id="comment" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				
-				<form action="#" method="get">
+
+		<div id="show" class="col-xs-9 col-sm-9 col-md-9 col-lg-9"
+			style="margin: 0; padding: 0;background:linen ">
+			<p style="float: center; color: #333">
+			<h2 align="center">作者简介</h2>
+			<p>作者广西人，2017年南京大学计算机本科毕业。</p>
+			<p>大学期间，不认真学习，不够上进，学习成绩不好。</p>
+			<p>最遗憾的事情就是，就是没有从来想过自己将来真真正正能干什么，喜欢干什么。</p>
+			<p>回想起来，后悔没有多看一本书，多写一段代码，多背几个单词。。。</p>
+			<p>到了离开校园，才真正想念校园的美好，图书馆里面的书，辅导员诚恳的话语，那一帮帮朝气蓬勃志向远大的同学。</p>
+			<p>最大的开心就是来自足球场，认识了一帮有活力耿直的朋友，能够一块玩耍，一块吹牛。</p>
+			<p>。。。</p>
+			<p>虽然很多遗憾，很多后悔，但是我需要往前看。</p>
+			<p>我做出了改变！</p>
+			<p>我计划着，先找到一个方向，让自己融入到这个行业当中，我需要热爱它。</p>
+			<p>我选择了学习<strong>前端知识</strong>，html、css、javascript等，一些模糊的词汇变得清晰起来。</p>
+			<p>是的，我希望坚持这一个方向。从0到1的开始，慢慢追逐我的100分。</p>
+			<p>自从有了方向，积极向上的心态慢慢的回来了，自信也回来了。</p>
+			<p>我将坚持学习，坚持这一个方向--前端学习。</p>
+			<p>路很长，太多太多的知识需要去学习，我将持之以恒！</p>
+			<p>现在，我在边学习前端知识，边开始去使用博客，去记录我的学习。</p>
+			<p>一点一点的改变，积少成多，一步一个脚印的走着。。走着。</p>
+			<hr><hr>
+			<p>吐槽一下自己，不写东西，永远不知道文笔有多差。</p>
+			<p>我相信，文笔总有好的一天！</p>
+			
+		</div>
+	</div>
+
+	<!--div class="row">
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+		<div id="comment" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+			<form action="#" method="get">
 				<fieldset>
 					<legend>Comments</legend>
 					<div class="form-group">
 						<textarea class="form-control" rows="3" style="float: center">
 				</textarea>
 
-						<input type="submit" style="float:rigth">
+						<input type="submit" style="float: rigth">
 					</div>
-					</fieldset>
-				</form>
-				
-			</div>
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
-		</div>
-	</div>
+				</fieldset>
+			</form>
 
+		</div>
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+	</div>
+-->
+<audio id="audio" src="https://carsonwuu.github.io/Blog/image/zgr.mp3"  autoplay="autoplay" style="opacity:0" preload="auto" controls loop hidden="true"/>
 
 </body>
 </html>
